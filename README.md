@@ -1,4 +1,4 @@
-# Sprint-Challenge Applied Javascript - Lambda Times
+# Sprint-Challenge Applied Javascript - Lambda Times 
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored the DOM and the concept of components. During this Sprint, you studied the DOM, DOM Events, and Components. In your challenge this week, you will demonstrate proficiency by creating an online Lambda newspaper called "Lambda Times."
 
@@ -30,15 +30,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the DOM?
+1. What is the DOM? connects web pages to scripts or programming languages by representing the structure of a document memory.
 
-2. What is an event?
+2. What is an event? it is an action that occurs as a result of the user, such as a mouse click
 
-3. What is an event listener?
+3. What is an event listener? A procedure or function in a computer tha twaits for an even to occur
 
-4. Why would we convert a NodeList into an Array?
+4. Why would we convert a NodeList into an Array? ecause ES6 does not allow you to use queryselectall when accessing  the Dom, there for we convert the nodeList into an array to access the Dom. 
 
-5. What is a component?
+5. What is a component? A line of code that is reusable. 
 
 ### Git Set up
 
