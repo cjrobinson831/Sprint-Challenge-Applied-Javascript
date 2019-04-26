@@ -18,16 +18,18 @@ class TabLink {
     //   // else if `all` is false, only select the cards with matching this.tabData values
       this.cards = this.tabData;
     }
-    console.log(this.tabData);
+    // console.log(this.tabData);
     // <- Delete this comment block when you work on the if statement
 
      // Map over the newly converted NodeList we just created in our if statement above. 
      //Convert each this.cards element into a new instance of the TabCard class. Pass in a card 
      //object to the TabCard class. 
-    // this.cards = Array.from(this.cards).map();
+    this.cards = Array.from(tabData).map(cards => new TabCards());
 
     // Add a click event that invokes this.selectTab
-    // this.tabElement.addEventListener();
+    this.tabElement.addEventListener('click', () =>{
+      this.selectTab();
+    });
   }
 
   selectTab(){
@@ -60,11 +62,11 @@ class TabLink {
 class TabCard {
   constructor(cardElement){
 //     // Assign this.cardElement to the cardElement DOM reference
-    this.cardElement;
+    this.cardElement = card;
   }
   selectCard(){
 //     // Update the style of this.cardElement to display = "flex"
-    this.cardElement;
+    this.cardElement = flex;
   }
 
 }
@@ -72,15 +74,14 @@ class TabCard {
 //  START HERE: 
 
 // // - Select all classes named ".tab" and assign that value to the tabs variable
-// const tab = document.querySelectorAll('.tab');
+const tab = document.querySelectorAll('.tab');
 // // console.log(tab);
 // // - With your selection in place, now chain a .forEach() method onto the tabs variable to iterate over the DOM NodeList
 
 // // - In your .forEach() method's callback function, return a new instance of TabLink and pass in each tab as a parameter
-// tab.forEach(function(tab){
+tab.forEach(function(tab){
 //     console.log(tabsLink);
-//     return new Tab(tab);
+    return new Tab(tab);
 
-let tabs = document.querySelectorAll();
-// // }
-// // }
+let tabs = document.querySelectorAll(tab);
+}
